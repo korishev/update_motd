@@ -2,7 +2,6 @@
 
 echo " "
 echo "Logged in users:"
-echo " "
 
 set PROCPS_FROMLEN=40
 w -hs
