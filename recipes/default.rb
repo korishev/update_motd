@@ -32,5 +32,11 @@ if platform?("ubuntu")
     group "root"
     mode '0755'
   end
+
+  cookbook_file "/etc/update-motd.d/85-list-logged-in-users" do
+    owner "root"
+    group "root"
+    mode '0755'
+  end
 end
 
