@@ -1,6 +1,6 @@
-maintainer       "YOUR_COMPANY_NAME"
-maintainer_email "YOUR_EMAIL"
-license          "All rights reserved"
+maintainer       "Morgan Nelson"
+maintainer_email "morgan.nelson@gmail.com"
+license          "Apache 2.0"
 description      "Installs/Configures update_motd"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.0.1"
+version          "0.0.2"
