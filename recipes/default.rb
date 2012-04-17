@@ -21,22 +21,22 @@
 if platform?("ubuntu")
   file "/etc/update-motd.d/10-help-text" do
     mode '600'
-  end
+  end if File.exists?("/etc/update-mode.d/10-help-text")
 
   file "/etc/update-motd.d/98-cloudguest" do
     action :delete
-  end
+  end if File.exists?("/etc/update-motd.d/98-cloudguest")
 
   cookbook_file "/usr/share/landscape/landscape-sysinfo.wrapper" do
     owner "root"
     group "root"
     mode '0755'
-  end
+  end if File.exists?("/usr/share/landscape") && File.directory?("/usr/share/landscape")
 
   cookbook_file "/etc/update-motd.d/85-list-logged-in-users" do
     owner "root"
     group "root"
     mode '0755'
-  end
+  end if File.exists?("/etc/update-motd.d") && File.directory?("/etc/update-motd.d")
 end
 
